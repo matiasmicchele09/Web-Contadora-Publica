@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./assets/font-roboto/Roboto-Regular.ttf">
     <link rel="stylesheet" href="./assets/font-roboto/Roboto-Bold.ttf">
     <script src="https://kit.fontawesome.com/a40ecc8ef9.js" crossorigin="anonymous"></script>
-    <title>Virginia De Paolo</title>
+    <title>Contadora Pública - VDP</title>
 </head>
 
 <body>
@@ -131,9 +131,10 @@
     </section>
 
     <section class="contact" id="contact">
-        <div class="photo-office">
+        <!-- <div class="photo-office">
             <img src="assets/images/ubicacion.png" alt="">
-        </div>
+        </div> -->
+        <div class="" id="map"></div>
         <div class="contact-information">
             <h4><i class="fa-solid fa-location-dot"></i> Moreno 301 - Arroyo Seco - Santa Fe</h4>
             <h4><i class="fa-brands fa-whatsapp"></i> +54 9 3402 573218</h4>
@@ -149,6 +150,31 @@
         </div>
     </footer>
     <script src="./assets/libs/bootstrap-5.2.0/js/bootstrap.min.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANaxuLzQCjxIU8S0BCjRKDxtJXoNpAVhU&callback=initMap"></script>
+    <script>
+        const mapDiv = document.getElementById("map"),
+            coords = {
+                lat: -33.16,
+                lng: -60.51
+            };
+        let map,
+            marker;
+
+        function initMap() {
+            map = new google.maps.Map(mapDiv, {
+                center: coords,
+                zoom: 17,
+            });
+        }
+
+        marker = new google.maps.Marker({
+            position: coords,
+            map: map,
+        });
+
+        // window.initMap = initMap;
+    </script>
+
 </body>
 
 </html>

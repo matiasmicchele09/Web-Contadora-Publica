@@ -1,3 +1,16 @@
+#map {
+    /* height: 100%; */
+    height: 400px;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
 /*----------------------------------------------------------------------------------------------------- 
  ------------------------------------- Sección Principal  ---------------------------------------
  ----------------------------------------------------------------------------------------------------- */
@@ -19,6 +32,11 @@ body {
 
 .nav-vdp #navbarNav a {
     color: #ffffff;
+}
+
+.nav-vdp #navbarNav a:hover {
+    background-color: #ffffff;
+    color: #8a5852;
 }
 
 .main-section {
@@ -79,6 +97,20 @@ body {
     /* max-height: 300px; */
 }
 
+.services-section .card:hover {
+    /* border: solid; */
+    /* padding: 15px; */
+    /* background: linear-gradient(#8a5852, #8a5852, #eeeeef); */
+    /* bacolor: #e9b0a8; */
+    background: linear-gradient(#e9b0a8, #e9b0a8, #e9b0a8);
+    /* height: 250px; */
+    /*width: 350px;
+    
+    height: 250px; */
+    /* max-width: 300px; */
+    /* max-height: 300px; */
+}
+
 .services-section .card-title {
     font-weight: bold;
 }
@@ -95,6 +127,7 @@ body {
 .about-me-section {
     display: flex;
     justify-content: center;
+    padding: 100px 0 100px 0;
 }
 
 .about-me-section .information {
