@@ -37,29 +37,20 @@
                     </li>
                 </ul>
             </div>
-            <!-- <ul class="navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class=""><img src="./assets/images/logo_vdp.jpg" alt="sin-foto-usuario" width="50" height="50" class="rounded-circle mt-1"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="a-perfil nav-link"></a>
-                </li>
-
-            </ul> -->
         </div>
     </nav>
 
     <section class="main-section">
         <img class="img" src="assets/images/main-section.jpg" alt="">
         <div class="contenedor">
-            <h3 class=""><span>SERVICIOS CONTABLES PROFESIONALES</span></h3>
+            <h3 class="">SERVICIOS CONTABLES PROFESIONALES</h3>
             <p>Impuestos nacionales y provinciales, sueldos, ámbito societario y trabajos de contabilidad en general</p>
         </div>
     </section>
 
     <section class="services-section" id="services">
         <div class="container">
-            <div class="card style=width: 18rem;">
+            <div class="card">
                 <img src="assets/images/liquidacion-impuestos.png" alt="liquidacion-impuestos" width="50px" height="50px">
                 <div class="card-body">
                     <h5 class="card-title">Liquidación de impuestos</h5>
@@ -125,21 +116,18 @@
 
         </div>
 
-        <!-- <div class="photo-me">
-            <img src="assets/images/virginia_de_paolo.jpeg" alt="Virginia De Paolo">
-        </div> -->
+
     </section>
 
     <section class="contact" id="contact">
-        <!-- <div class="photo-office">
-            <img src="assets/images/ubicacion.png" alt="">
-        </div> -->
         <div class="" id="map"></div>
         <div class="contact-information">
-            <h4><i class="fa-solid fa-location-dot"></i> Moreno 301 - Arroyo Seco - Santa Fe</h4>
-            <h4><i class="fa-brands fa-whatsapp"></i> +54 9 3402 573218</h4>
-            <h4><i class="fa-sharp fa-solid fa-envelope"></i> depaolovirginia@gmail.com</h4>
-            <h4><i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/contadora.dp/" target="_blank">@contadora.dp</a></h4>
+            <p><i class="fa-solid fa-location-dot"></i> Moreno 301 - Arroyo Seco - Santa Fe</p>
+            <p><i class="fa-sharp fa-solid fa-envelope"></i> depaolovirginia@gmail.com</p>
+            <p class="instagram"><a class="nav-link" href="https://www.instagram.com/contadora.dp/" target="_blank"><i class="fa-brands fa-instagram"></i> Seguime en <b>@contadora.dp</b></a></p>
+            <br>
+            <p class=""> <a class="nav-link whatsapp" href="https://api.whatsapp.com/send?phone=5493402573218" target="_blank"><i class="fa-brands fa-whatsapp"></i> Hace tu consulta </a></p>
+
         </div>
     </section>
 
@@ -150,31 +138,8 @@
         </div>
     </footer>
     <script src="./assets/libs/bootstrap-5.2.0/js/bootstrap.min.js"></script>
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANaxuLzQCjxIU8S0BCjRKDxtJXoNpAVhU&callback=initMap"></script>
-    <script>
-        const mapDiv = document.getElementById("map"),
-            coords = {
-                lat: -33.16,
-                lng: -60.51
-            };
-        let map,
-            marker;
-
-        function initMap() {
-            map = new google.maps.Map(mapDiv, {
-                center: coords,
-                zoom: 17,
-            });
-        }
-
-        marker = new google.maps.Marker({
-            position: coords,
-            map: map,
-        });
-
-        // window.initMap = initMap;
-    </script>
-
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANaxuLzQCjxIU8S0BCjRKDxtJXoNpAVhU&callback=initMap" defer></script>
+    <script src="./home.js"></script>
 </body>
 
 </html>
