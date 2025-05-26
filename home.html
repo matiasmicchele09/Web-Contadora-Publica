@@ -1,145 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/normalize.css">
-    <link rel="stylesheet" href="./assets/libs/bootstrap-5.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/styles.css">
-    <link rel="stylesheet" href="./assets/font-roboto/Roboto-Regular.ttf">
-    <link rel="stylesheet" href="./assets/font-roboto/Roboto-Bold.ttf">
-    <script src="https://kit.fontawesome.com/a40ecc8ef9.js" crossorigin="anonymous"></script>
-    <title>Contadora Pública - VDP</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Virginia De Paolo | Contadora Pública</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
 </head>
+<body class="bg-white text-gray-800">
 
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-vdp">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about-me">Sobre Mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+  <!-- Header / Navegación -->
+  <header class="bg-green-700 text-white">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-4">
+      <h1 class="text-lg font-semibold"></h1>
+      <ul class="flex gap-6">
+        <li><a href="#inicio" class="hover:text-green-200">Inicio</a></li>
+        <li><a href="#servicios" class="hover:text-green-200">Servicios</a></li>
+        <li><a href="#sobre-mi" class="hover:text-green-200">Sobre mí</a></li>
+        <li><a href="#contacto" class="hover:text-green-200">Contacto</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <section class="main-section">
-        <img class="img" src="assets/images/main-section.jpg" alt="">
-        <div class="contenedor">
-            <h3 class="">SERVICIOS CONTABLES PROFESIONALES</h3>
-            <p>Impuestos nacionales y provinciales, sueldos, ámbito societario y trabajos de contabilidad en general</p>
-        </div>
-    </section>
+  <!-- Hero principal -->
+  <section class="bg-green-50 text-center py-20 px-4" id="inicio">
+    <h2 class="text-4xl font-bold text-green-800 mb-4">Virginia De Paolo</h2>
+    <p class="text-lg mb-6">Impuestos nacionales y provinciales, sueldos, ámbito societario y trabajos de contabilidad en general.</p>
+    <a href="#contacto">
+      <button class="bg-green-600 hover:bg-green-500 text-white py-2 px-6 rounded-lg shadow-md transition">
+        Solicitar consulta
+      </button>
+    </a>
+  </section>
 
-    <section class="services-section" id="services">
-        <div class="container">
-            <div class="card">
-                <img src="assets/images/liquidacion-impuestos.png" alt="liquidacion-impuestos" width="50px" height="50px">
-                <div class="card-body">
-                    <h5 class="card-title">Liquidación de impuestos</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+  <!-- Servicios -->
+  <section class="py-20 bg-white" id="servicios">
+    <div class="container mx-auto px-4 text-center">
+      <h3 class="text-3xl font-semibold text-green-800 mb-10">Servicios</h3>
+      <div class="grid md:grid-cols-3 gap-8">
 
-            </div>
-            <div class="card style=width: 18rem;">
-                <img src="assets/images/certificaciones-contables.png" alt="certificaciones-contables" width="50px" height="50px">
-                <div class="card-body">
-                    <h5 class="card-title">Certificaciones contables</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-
-            </div>
-            <div class="card style=width: 18rem;">
-                <img src="assets/images/alta-baja-trabajadores.png" alt="alta-baja-trabajadores" width="50px" height="50px">
-                <div class="card-body">
-                    <h5 class="card-title">Altas y bajas de trabajadores</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-
-            </div>
-            <div class="card style=width: 18rem;">
-                <img src="assets/images/documento.png" alt="documento" width="50px" height="50px">
-                <div class="card-body">
-                    <h5 class="card-title">Trámites administrativos - AFIP e IGP</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-
-            </div>
-            <div class="card style=width: 18rem;">
-                <img src="assets/images/altas-bajas.png" alt="altas-bajas" width="50px" height="50px">
-                <div class="card-body">
-                    <h5 class="card-title">Alta, baja y recategorización de monotributistas</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-
-            </div>
-            <div class="card style=width: 18rem;">
-                <img src="assets/images/asesoramiento.png" alt="asesoramiento" width="50px" height="50px">
-                <div class="card-body">
-                    <h5 class="card-title">Asesoramiento impositivo</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="about-me-section" id="about-me">
-        <div class="information">
-            <div class="paragraphs">
-                <h3 class="my-name">Virginia De Paolo - Mat. 21.602</h3>
-                <p>Todo lo que realizo, lo hago con gran responsabilidad y compromiso. Busco trabajar con eficiencia y honestidad. Pero sobre todo, aportar valor y ayudar a mi cliente a alcanzar los objetivos planteados.</p>
-                <p>Me gradué como Contadora Pública en la Universidad Nacional de Rosario (UNR) en el año 2020. Tengo experiencia en el ERP SAP, Tango Contabilidad y People Soft. Sumado a los numerosos cursos de capacitación que he tomado durante mi carrera
-                    (US GAAP, IFRS, Impuesto diferido, Estados consolidados y VPP, Implementación de Normas Internacionales Financieras (NIFF), Administración y Auditoría de consorcios, entre otros.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, adipisci, libero quos quisquam magnam cumque fuga, corrupti consequuntur iste veniam quam! Ab accusamus sapiente sed unde labore quis molestias impedit.</p>
-            </div>
-            <div class="photo-me">
-                <img src="assets/images/virginia_de_paolo.jpeg" alt="Virginia De Paolo">
-            </div>
-
+        <div class="bg-green-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <img src="assets/images/liquidacion-impuestos.png" alt="liquidacion-impuestos" width="50px" height="50px" class="mx-auto mb-4 w-12">
+          <h4 class="text-xl font-semibold text-green-700 mb-2">Liquidación de impuestos</h4>
+          <p>Organización y análisis de tu contabilidad mensual y anual.</p>
         </div>
 
-
-    </section>
-
-    <section class="contact" id="contact">
-        <div class="" id="map"></div>
-        <div class="contact-information">
-            <p><i class="fa-solid fa-location-dot"></i> Moreno 301 - Arroyo Seco - Santa Fe</p>
-            <p><i class="fa-sharp fa-solid fa-envelope"></i> depaolovirginia@gmail.com</p>
-            <p class="instagram"><a class="nav-link" href="https://www.instagram.com/contadora.dp/" target="_blank"><i class="fa-brands fa-instagram"></i> Seguime en <b>@contadora.dp</b></a></p>
-            <br>
-            <p class=""> <a class="nav-link whatsapp" href="https://api.whatsapp.com/send?phone=5493402573218" target="_blank"><i class="fa-brands fa-whatsapp"></i> Hace tu consulta </a></p>
-
+        <div class="bg-green-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <img src="assets/images/certificaciones-contables.png" alt="certificaciones-contables" width="50px" height="50px" class="mx-auto mb-4 w-12">
+          <h4 class="text-xl font-semibold text-green-700 mb-2">Certificaciones contables</h4>
+          <p>Liquidación de impuestos nacionales y provinciales.</p>
         </div>
-    </section>
-
-
-    <footer class="footer">
-        <div>
-            <p>Web creada por Matías Micchele - Todos los derechos reservados - @copiright 2023</p>
+        
+        <div class="bg-green-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <img src="assets/images/alta-baja-trabajadores.png" alt="alta-baja-trabajadores" width="50px" height="50px" class="mx-auto mb-4 w-12">
+          <h4 class="text-xl font-semibold text-green-700 mb-2">Altas y bajas de trabajadores</h4>
+          <p>Altas, modificaciones y cumplimiento de obligaciones mensuales.</p>
         </div>
-    </footer>
-    <script src="./assets/libs/bootstrap-5.2.0/js/bootstrap.min.js"></script>
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANaxuLzQCjxIU8S0BCjRKDxtJXoNpAVhU&callback=initMap" defer></script>
-    <script src="./home.js"></script>
+
+        <div class="bg-green-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+            <img src="assets/images/documento.png" alt="documento" width="50px" height="50px" width="50px" height="50px" class="mx-auto mb-4 w-12">
+            <h4 class="text-xl font-semibold text-green-700 mb-2">Trámites administrativos - AFIP e IGP</h4>
+            <p>Altas, modificaciones y cumplimiento de obligaciones mensuales.</p>
+          </div>
+
+          <div class="bg-green-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+            <img src="assets/images/altas-bajas.png" alt="altas-bajas" width="50px" height="50px" width="50px" height="50px" class="mx-auto mb-4 w-12">
+            <h4 class="text-xl font-semibold text-green-700 mb-2">Alta, baja y recategorización de monotributistas</h4>
+            <p>Altas, modificaciones y cumplimiento de obligaciones mensuales.</p>
+          </div>
+
+          <div class="bg-green-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+            <img src="assets/images/asesoramiento.png" alt="asesoramiento" width="50px" height="50px" width="50px" height="50px" class="mx-auto mb-4 w-12">
+            <h4 class="text-xl font-semibold text-green-700 mb-2">Asesoramiento impositivo</h4>
+            <p>Altas, modificaciones y cumplimiento de obligaciones mensuales.</p>
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre mí -->
+  <section class="bg-green-50 py-20 px-4" id="sobre-mi">
+    <div class="container mx-auto flex flex-col md:flex-row items-center gap-10">
+      <img src="./assets/images/virginia_de_paolo.jpeg" alt="Virginia De Paolo" class="w-64 h-64 object-cover rounded-full shadow-lg">
+      <p class="text-lg max-w-xl">
+        Soy contadora pública con más de 10 años de experiencia ayudando a personas y empresas a tomar decisiones financieras inteligentes. Me especializo en brindar asesoramiento personalizado, claro y accesible.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="py-20 bg-white" id="contacto">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl text-center font-semibold text-green-800 mb-10">Contacto</h3>
+      <form class="max-w-xl mx-auto bg-green-50 p-6 rounded-lg shadow">
+        <input type="text" name="nombre" placeholder="Tu nombre"
+          class="w-full p-3 mb-4 rounded border border-green-200 focus:outline-none focus:ring-2 focus:ring-green-400" required />
+        <input type="email" name="email" placeholder="Tu correo electrónico"
+          class="w-full p-3 mb-4 rounded border border-green-200 focus:outline-none focus:ring-2 focus:ring-green-400" required />
+        <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje"
+          class="w-full p-3 mb-4 rounded border border-green-200 focus:outline-none focus:ring-2 focus:ring-green-400" required></textarea>
+        <button type="submit"
+          class="bg-green-600 hover:bg-green-500 text-white py-2 px-6 rounded shadow-md transition w-full">
+          Enviar
+        </button>
+      </form>
+      <p class="text-center mt-6">También podés escribirme a
+        <a href="mailto:depaolovirginia@gmail.com" class="text-green-600 underline">depaolovirginia@gmail.com</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white text-center py-4">
+    <p>&copy; 2025 Virginia De Paolo - Contadora Pública. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  
+  <div class="flex items-center gap-2 fixed bottom-6 right-6 bg-green-700 hover:bg-green-300 text-green-900 p-4 rounded-full shadow-lg transition duration-300"
+       style="cursor: pointer;">
+    <a href="https://api.whatsapp.com/send?phone=5493402573218" target="_blank" aria-label="WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" height="32" width="28" viewBox="0 0 448 512">
+            <path fill="#63E6BE" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+        </svg>        
+    </a>
+    <p class="text-white">¡Hola! ¿Cómo puedo ayudarte?</p>
+  </div>
 </body>
-
 </html>
